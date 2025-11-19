@@ -590,6 +590,14 @@
             }
         }
 
+        /* ===== MASSIVE GALLERY FIX ===== */
+        #massive-gallery img {
+            height: 350px !important;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 4px;
+        }
+
         /* ===== PRODUCTS ===== */
         .masc-products {
             padding: 6rem 0;
@@ -609,7 +617,9 @@
 
         .masc-card-img {
             position: relative;
-            aspect-ratio: 3/4;
+            width: 100%;
+            height: 450px;
+            /* Fixed height forced as requested */
             overflow: hidden;
         }
 
@@ -617,6 +627,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top center;
+            /* Better for clothing */
         }
 
         .masc-card-body {
