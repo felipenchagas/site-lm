@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | LM Modas & Acessórios - Nossa História</title>
+    <meta name="description"
+        content="Conheça a história da LM Modas & Acessórios. Uma jornada de paixão por moda, qualidade e compromisso com as famílias de Itaim Paulista.">
+    <meta name="keywords"
+        content="sobre lm modas, história lm modas, moda itaim paulista, valores lm modas, loja de roupas família">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre Nós | LM Modas & Acessórios">
+    <meta property="og:description" content="Descubra como transformamos paixão por moda em estilo para sua família.">
+    <meta property="og:url" content="https://lmmodas.com.br/sobre-nos.html">
+    <meta property="og:image" content="assets/img/about-hero-bg.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_glamer.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Custom Styles for Sobre Nós Page */
+        :root {
+            --about-primary: #bfa37c;
+            /* Gold/Beige tone */
+            --about-secondary: #2b2b2b;
+            /* Dark Gray */
+            --about-bg-light: #f9f9f9;
+        }
+
+        .about-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 500px;
+            background: url('assets/img/about-hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .about-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .about-hero-subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-year {
+            flex: 0 0 100px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--about-primary);
+            font-family: 'Oswald', sans-serif;
+            text-align: right;
+            padding-right: 30px;
+            position: relative;
+        }
+
+        .timeline-year::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            background: var(--about-primary);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding-left: 30px;
+            border-left: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .timeline-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--about-secondary);
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 80px 0;
+            background-color: var(--about-bg-light);
+        }
+
+        .value-card {
+            background: #fff;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            color: var(--about-primary);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .value-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        /* Unique Section */
+        .unique-section {
+            padding: 80px 0;
+        }
+
+        .unique-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .unique-img img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .unique-img:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero-title {
+                font-size: 2.5rem;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+            }
+
+            .timeline-year {
+                text-align: left;
+                padding-right: 0;
+                margin-bottom: 10px;
+                padding-left: 20px;
+            }
+
+            .timeline-year::after {
+                left: 0;
+                right: auto;
+            }
+
+            .timeline-content {
+                border-left: 2px solid #eee;
+                margin-left: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+        <div class="ul-sidebar-about d-none d-lg-block">
+            <span class="title">Sobre LM Modas</span>
+            <p class="mb-0">Na LM Modas e Acessórios, você encontra as últimas tendências da moda casual para toda a
+                família. Oferecemos uma seleção especial de roupas masculinas, femininas e infantis.</p>
+        </div>
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Siga a LM Modas</span>
+            <div class="ul-sidebar-footer-social">
+                <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener"><i
+                        class="flaticon-instagram"></i></a>
+                <a href="https://wa.me/5541949989086" target="_blank" rel="noopener"><i
+                        class="flaticon-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header">
+        <div class="ul-header-top">
+            <div class="ul-header-top-slider splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> História de Sucesso
+                            </p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Moda com Propósito</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Atendimento Humanizado
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ul-header-bottom">
+            <div class="ul-container">
+                <div class="ul-header-bottom-wrapper">
+                    <div class="header-bottom-left">
+                        <div class="logo-container">
+                            <a href="index.html" class="d-inline-block"><img src="assets/img/logo.png" alt="logo"
+                                    class="logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="ul-header-nav-wrapper">
+                        <div class="to-go-to-sidebar-in-mobile">
+                            <nav class="ul-header-nav" aria-label="Navegação principal">
+                                <a href="index.html">Início</a>
+                                <a href="roupas-femininas.html">Feminino</a>
+                                <a href="roupas-masculinas.html">Masculino</a>
+                                <a href="roupas-infantis.html">Infantil</a>
+                                <a href="joias.html">Jóias</a>
+                                <a href="sobre-nos.html" class="active">Sobre Nós</a>
+                                <a href="contato.html">Contato</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="ul-header-actions">
+                        <button class="ul-header-mobile-search-opener d-xxl-none"><i
+                                class="flaticon-search-interface-symbol"></i></button>
+                    </div>
+
+                    <div class="d-inline-flex">
+                        <button class="ul-header-sidebar-opener"><i class="flaticon-hamburger"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+        <!-- HERO SECTION START -->
+        <section class="about-hero"
+            style="background-image: url('assets/img/about-cover-img.jpg'); background-attachment: fixed;">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title wow fadeInUp">Moda que Conta Histórias</h1>
+                <p class="about-hero-subtitle wow fadeInUp" data-wow-delay="0.2s">Mais do que roupas, entregamos
+                    autoestima e conforto para o seu dia a dia.</p>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- WHO WE ARE SECTION START -->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 position-relative wow fadeInLeft">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="assets/img/about-img-1.jpg" class="img-fluid rounded shadow-lg"
+                                    alt="Nossa Loja">
+                            </div>
+                            <div class="col-6 mt-5">
+                                <img src="assets/img/about-img-2.jpg" class="img-fluid rounded shadow-lg"
+                                    alt="Detalhes">
+                            </div>
+                        </div>
+                        <!-- Decorative Element -->
+                        <div class="position-absolute top-50 start-50 translate-middle z-n1 d-none d-lg-block"
+                            style="width: 80%; height: 80%; border: 2px solid var(--about-primary); transform: rotate(-5deg);">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow fadeInRight">
+                        <span class="text-uppercase text-muted letter-spacing-2 d-block mb-2">Quem Somos</span>
+                        <h2 class="display-5 fw-bold mb-4">Apaixonados por Estilo e Pessoas</h2>
+                        <p class="lead text-muted mb-4">A LM Modas nasceu de um sonho simples: vestir bem, com qualidade
+                            e preço justo.</p>
+                        <p class="mb-4">Acreditamos que a moda é uma forma de expressão. Cada peça em nossa loja é
+                            selecionada com carinho, pensando na diversidade e na beleza única de cada cliente. Do
+                            casual ao elegante, do infantil ao adulto, nossa missão é fazer você se sentir incrível.</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="border-start border-4 border-warning ps-3">
+                                <p class="fst-italic mb-0 text-muted">"Nossa maior realização é ver o sorriso no rosto
+                                    de quem se olha no espelho e se ama."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHO WE ARE SECTION END -->
+
+        <!-- HISTORY TIMELINE START -->
+        <section class="timeline-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="d-block text-uppercase text-muted mb-2 letter-spacing-2">Nossa Jornada</span>
+                        <h2 class="display-5 fw-bold mb-4">De Itaim Paulista para o Mundo</h2>
+                        <p class="lead text-muted">Uma história construída com muito trabalho, dedicação e amor pela
+                            moda.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="timeline-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="timeline-year">2015</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">O Início de Um Sonho</h3>
+                                <p>Tudo começou em uma pequena garagem no coração de Itaim Paulista. Com apenas algumas
+                                    araras e muita vontade de vencer, a LM Modas nasceu do desejo de trazer roupas de
+                                    qualidade a preços justos para a comunidade local.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Primeira Expansão</h3>
+                                <p>Graças à confiança de nossos clientes, inauguramos nossa primeira loja física
+                                    oficial. Um espaço maior, mais confortável e com uma variedade ainda maior de
+                                    produtos para atender toda a família.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Superando Desafios</h3>
+                                <p>Em um ano desafiador para todos, nos reinventamos. Fortalecemos nosso atendimento
+                                    digital e delivery, garantindo que nossos clientes continuassem recebendo carinho e
+                                    estilo no conforto de suas casas.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Uma Nova Era</h3>
+                                <p>A LM Modas se renova. Nova identidade visual, site moderno e a mesma essência de
+                                    sempre. Continuamos crescendo, mas sem nunca esquecer nossas raízes e o valor de
+                                    cada cliente que faz parte da nossa história.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HISTORY TIMELINE END -->
+
+        <!-- VALUES SECTION START -->
+        <section class="values-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold mb-4">Nossos Pilares</h2>
+                        <p class="text-muted">O que nos move todos os dias para entregar o melhor para você.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="flaticon-diamond"></i></div>
+                            <h3 class="value-title">Qualidade</h3>
+                            <p class="mb-0 text-muted">Seleção rigorosa de tecidos e acabamentos para garantir
+                                durabilidade e conforto.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="flaticon-family"></i></div>
+                            <h3 class="value-title">Família</h3>
+                            <p class="mb-0 text-muted">Somos uma empresa familiar e tratamos cada cliente como parte da
+                                nossa casa.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="flaticon-heart"></i></div>
+                            <h3 class="value-title">Atendimento</h3>
+                            <p class="mb-0 text-muted">Mais do que vender, queremos ouvir, entender e ajudar você a se
+                                sentir bem.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="flaticon-star"></i></div>
+                            <h3 class="value-title">Estilo</h3>
+                            <p class="mb-0 text-muted">As últimas tendências da moda acessíveis para o seu dia a dia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VALUES SECTION END -->
+        <!-- UNIQUE SECTION START -->
+        <section class="unique-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft">
+                        <div class="unique-img">
+                            <img src="assets/img/store-1.jpg" alt="Interior da Loja LM Modas" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow fadeInRight">
+                        <span class="text-uppercase text-muted letter-spacing-2 d-block mb-2">Por que somos
+                            diferentes</span>
+                        <h2 class="display-5 fw-bold mb-4">O Que Nos Torna Únicos</h2>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg-light rounded-circle p-3 text-primary">
+                                    <i class="flaticon-dress fs-4" style="color: var(--about-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Curadoria Exclusiva</h4>
+                                <p class="text-muted">Não vendemos apenas roupas, vendemos estilo. Cada peça é escolhida
+                                    pensando na mulher, no homem e na criança moderna.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg-light rounded-circle p-3 text-primary">
+                                    <i class="flaticon-chat fs-4" style="color: var(--about-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Consultoria de Moda</h4>
+                                <p class="text-muted">Nossa equipe é treinada para ajudar você a montar looks incríveis
+                                    que valorizam sua beleza natural.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-light rounded-circle p-3 text-primary">
+                                    <i class="flaticon-location fs-4" style="color: var(--about-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Coração de Itaim Paulista</h4>
+                                <p class="text-muted">Orgulhosamente locais. Conhecemos nossos clientes pelo nome e
+                                    fazemos parte da comunidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- UNIQUE SECTION END -->
+
+        <!-- TESTIMONIALS SECTION START -->
+        <section class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold mb-4">O Que Dizem Sobre Nós</h2>
+                        <p class="text-muted">A satisfação de nossos clientes é o nosso maior prêmio.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="card-body">
+                                <div class="mb-3 text-warning">
+                                    <i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i>
+                                </div>
+                                <p class="card-text text-muted mb-4">"Amo comprar na LM! As roupas são lindas, de ótima
+                                    qualidade e o atendimento é maravilhoso. As meninas sempre me ajudam a escolher o
+                                    look perfeito."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/review-author-1.png" class="rounded-circle" width="50"
+                                        height="50" alt="Maria Julia">
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Maria Julia</h6>
+                                        <small class="text-muted">Cliente desde 2019</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="card-body">
+                                <div class="mb-3 text-warning">
+                                    <i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i>
+                                </div>
+                                <p class="card-text text-muted mb-4">"Encontro tudo para meus filhos e para mim. Preço
+                                    justo e peças que duram muito. Recomendo de olhos fechados para todos do bairro."
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/review-author-2.png" class="rounded-circle" width="50"
+                                        height="50" alt="Ana Silva">
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Ana Silva</h6>
+                                        <small class="text-muted">Cliente Frequente</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="card-body">
+                                <div class="mb-3 text-warning">
+                                    <i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i><i class="flaticon-star"></i><i
+                                        class="flaticon-star"></i>
+                                </div>
+                                <p class="card-text text-muted mb-4">"A melhor loja de Itaim Paulista! O ambiente é
+                                    super acolhedor e sempre tem novidades. O atendimento pelo WhatsApp também é super
+                                    ágil."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/review-author-3.png" class="rounded-circle" width="50"
+                                        height="50" alt="Ricardo Oliveira">
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Ricardo Oliveira</h6>
+                                        <small class="text-muted">Cliente Novo</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIALS SECTION END -->
+
+        <!-- VIDEO EXPERIENCE SECTION START -->
+        <section class="py-5 position-relative d-flex align-items-center justify-content-center"
+            style="min-height: 400px; background: url('assets/img/video-banner.jpg') no-repeat center center/cover;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="position-relative z-1 text-center text-white">
+                <a href="https://www.youtube.com/watch?v=dummy"
+                    class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+                    style="width: 80px; height: 80px; border-width: 2px;">
+                    <i class="flaticon-play fs-3 ms-1"></i>
+                </a>
+                <h2 class="display-5 fw-bold mb-3">Sinta a Experiência LM</h2>
+                <p class="lead mb-0">Um pouco do nosso dia a dia e da nossa paixão.</p>
+            </div>
+        </section>
+        <!-- VIDEO EXPERIENCE SECTION END -->
+
+        <!-- LIFESTYLE GALLERY SECTION START -->
+        <section class="py-5">
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-1.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 1">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-2.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 2">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-3.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 3">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-4.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 4">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-5.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 5">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative overflow-hidden group-hover-zoom">
+                            <img src="assets/img/gallery-item-6.jpg" class="w-100 h-100 object-fit-cover"
+                                style="min-height: 300px;" alt="Gallery 6">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 hover-opacity-50 transition-all d-flex align-items-center justify-content-center">
+                                <i class="flaticon-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LIFESTYLE GALLERY SECTION END -->
+
+        <!-- CTA SECTION START -->
+        <section class="py-5" style="background-color: var(--about-secondary); color: #fff;">
+            <div class="container py-5 text-center">
+                <h2 class="display-4 fw-bold mb-4 wow fadeInUp">Venha Fazer Parte da Nossa Família</h2>
+                <p class="lead mb-5 wow fadeInUp" data-wow-delay="0.1s" style="opacity: 0.9;">Estamos esperando por você
+                    com um café quentinho e as melhores novidades da moda.</p>
+                <div class="d-flex justify-content-center gap-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="https://wa.me/5541949989086" class="btn btn-light btn-lg px-5 rounded-pill fw-bold">Fale no
+                        WhatsApp</a>
+                    <a href="index.html" class="btn btn-outline-light btn-lg px-5 rounded-pill fw-bold">Ver Coleção</a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA SECTION END -->
+
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer">
+        <div class="ul-inner-container">
+            <div class="ul-footer-top">
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">LM Modas</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="shop.html">Masculino</a>
+                        <a href="shop.html">Feminino</a>
+                        <a href="shop.html">Infantil</a>
+                    </div>
+                </div>
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">Atendimento</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="https://wa.me/5541949989086">WhatsApp</a>
+                        <a href="contact.html">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">Institucional</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="about.html">Sobre Nós</a>
+                        <a href="privacy.html">Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ul-footer-bottom">
+                <p class="copyright-txt">Copyright 2025 © LM Modas & Acessórios</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Roupas Infantis em Itaim Paulista | LM Modas Kids</title>
+
+  <meta name="language" content="pt-BR">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="LM Modas & Acessórios">
+  <meta name="description"
+    content="Encontre roupas infantis em Itaim Paulista com conforto, estilo e preço justo. Conjuntos, vestidos e looks para meninos e meninas na LM Modas Kids, na Rua Romoaldo de Souza Brito, 270.">
+  <meta name="keywords"
+    content="roupas infantis itaim paulista, moda infantil itaim paulista, moda kids zona leste, conjunto infantil, vestido infantil, roupa de festa infantil itaim, lm modas kids, loja de roupa criança">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LM Modas Kids | Roupas Infantis no Itaim Paulista">
+  <meta property="og:description"
+    content="Conforto e estilo para os pequenos. Visite nossa loja na Rua Romoaldo de Souza Brito, 270, Itaim Paulista.">
+  <meta property="og:url" content="https://lmmodas.com.br/roupas-infantis.html">
+  <meta property="og:image" content="fotos/infantil/conjunto-infantil-cores-mistas.jpg">
+
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "LM Modas & Acessórios",
+    "description": "Loja especializada em moda infantil e casual no Itaim Paulista.",
+    "url": "https://lmmodas.com.br/roupas-infantis.html",
+    "telephone": "+5541949989086",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Romoaldo de Souza Brito, 270",
+      "addressLocality": "Itaim Paulista",
+      "addressRegion": "SP",
+      "postalCode": "08142-000",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/icon/flaticon_glamer.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+  <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- ESTILO EXTRA DO HERO KIDS + MICROINTERAÇÕES -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+    :root {
+      --kids-primary: #FF4081;
+      /* Hot Pink */
+      --kids-secondary: #00B0FF;
+      /* Bright Blue */
+      --kids-accent: #FFD740;
+      /* Sunshine Yellow */
+      --kids-purple: #D500F9;
+      /* Playful Purple */
+      --kids-green: #00E676;
+      /* Lime Green */
+      --kids-text: #2c3e50;
+      --kids-bg-light: #FFF9FC;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--kids-text);
+      background-color: var(--kids-bg-light);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .ul-section-title,
+    .kids-hero-title {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    /* ===== HERO KIDS ESPECÍFICO DESSA PÁGINA ===== */
+
+    .kids-hero {
+      position: relative;
+      padding: 5rem 0 4rem;
+      overflow: hidden;
+    }
+
+    .kids-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 50%, rgba(255, 215, 64, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(0, 176, 255, 0.15) 0%, transparent 25%),
+        linear-gradient(135deg, #FFF0F5 0%, #FFFFFF 50%, #E1F5FE 100%);
+      z-index: -2;
+    }
+
+    .kids-hero-noise {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: -1;
+    }
+
+    .kids-hero-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991.98px) {
+      .kids-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+      }
+    }
+
+    .kids-hero-card {
+      position: relative;
+      z-index: 1;
+      padding: 3rem 3.5rem;
+      box-sizing: border-box;
+    }
+
+    .kids-hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(255, 64, 129, 0.15);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--kids-primary);
+      margin-bottom: 1.2rem;
+      border: 2px solid rgba(255, 64, 129, 0.1);
+      transform-origin: left center;
+      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @media (max-width: 991.98px) {
+      .kids-hero-pill {
+        transform-origin: center;
+      }
+    }
+
+    .kids-hero-title {
+      font-size: 3.2rem;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      color: #2c3e50;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .kids-hero-title span {
+      color: var(--kids-primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .kids-hero-title span::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: var(--kids-accent);
+      opacity: 0.4;
+      z-index: -1;
+      border-radius: 4px;
+      transform: rotate(-2deg);
+    }
+
+    @media (max-width: 575.98px) {
+      .kids-hero-title {
+        font-size: 2.4rem;
+      }
+    }
+
+    .kids-hero-sub {
+      font-size: 1.1rem;
+      color: #5b6475;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .kids-hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 991.98px) {
+      .kids-hero-tags {
+        justify-content: center;
+      }
+    }
+
+    .kids-hero-tag {
+      font-size: 0.85rem;
+      padding: 0.4rem 1rem;
+      border-radius: 12px;
+      background: #fff;
+      border: 2px solid #f0f0f0;
+      color: #555;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .kids-hero-tag:hover {
+      border-color: var(--kids-secondary);
+      color: var(--kids-secondary);
+      transform: translateY(-3px);
+    }
+
+    .kids-hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991.98px) {
+      .kids-hero-cta-row {
+        justify-content: center;
+      }
+    }
+
+    .kids-hero-cta-main {
+      background: var(--kids-primary);
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.8rem 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .kids-hero-cta-main:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(255, 64, 129, 0.4);
+      color: #fff;
+      background: #f50057;
+    }
+
+    .kids-hero-cta-secondary {
+      background: #fff;
+      color: var(--kids-secondary);
+      border: 2px solid var(--kids-secondary);
+      border-radius: 999px;
+      padding: 0.7rem 1.8rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .kids-hero-cta-secondary:hover {
+      background: var(--kids-secondary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* LADO DIREITO – COLAGEM DE FOTOS */
+    .kids-hero-media {
+      position: relative;
+      height: 450px;
+    }
+
+    @media (max-width: 991.98px) {
+      .kids-hero-media {
+        height: 350px;
+        margin-bottom: 2rem;
+        order: -1;
+      }
+    }
+
+    .kids-blob {
+      position: absolute;
+      z-index: -1;
+      animation: blobFloat 10s ease-in-out infinite;
+    }
+
+    .kids-blob-1 {
+      top: -10%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 215, 64, 0.3);
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      animation-delay: 0s;
+    }
+
+    .kids-blob-2 {
+      bottom: -10%;
+      left: -10%;
+      width: 250px;
+      height: 250px;
+      background: rgba(0, 176, 255, 0.2);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      animation-delay: -2s;
+    }
+
+    .kids-hero-photo-main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 380px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      border: 6px solid #fff;
+      z-index: 2;
+      animation: floatMain 6s ease-in-out infinite;
+    }
+
+    .kids-hero-photo-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .kids-hero-photo-small {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 4px solid #fff;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+    }
+
+    .kids-hero-photo-small:nth-child(2) {
+      top: 10%;
+      left: 0;
+      transform: rotate(-10deg);
+      animation: floatSmall1 7s ease-in-out infinite;
+    }
+
+    .kids-hero-photo-small:nth-child(3) {
+      bottom: 15%;
+      right: 0;
+      transform: rotate(10deg);
+      animation: floatSmall2 8s ease-in-out infinite;
+    }
+
+    .kids-hero-photo-small img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* DECORATIONS */
+    .kids-deco-star {
+      position: absolute;
+      color: var(--kids-accent);
+      font-size: 2rem;
+      animation: spinSlow 12s linear infinite;
+      z-index: 1;
+    }
+
+    /* ===== CATEGORIAS ===== */
+    .ul-categories {
+      padding: 4rem 0;
+    }
+
+    .ul-category {
+      background: #fff;
+      border-radius: 24px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 2px solid transparent;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      display: block;
+      height: 100%;
+    }
+
+    .ul-category:hover {
+      transform: translateY(-10px);
+      border-color: var(--kids-secondary);
+      box-shadow: 0 20px 40px rgba(0, 176, 255, 0.15);
+    }
+
+    .ul-category-img {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 1.5rem;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .ul-category-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ul-category-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 4px solid var(--kids-accent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .ul-category:hover .ul-category-img::after {
+      opacity: 1;
+    }
+
+    .ul-category-txt span {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .ul-category-btn {
+      margin-top: 1rem;
+      color: var(--kids-primary);
+      font-weight: 700;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .ul-category:hover .ul-category-btn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== PRODUTOS ===== */
+    .ul-product {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid #f0f0f0;
+    }
+
+    .ul-product:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      transform: translateY(-5px);
+    }
+
+    .ul-product-img {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+
+    .ul-product-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #fff;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .ul-product-badge--new {
+      background: var(--kids-green);
+    }
+
+    .ul-product-badge--fav {
+      background: var(--kids-purple);
+    }
+
+    .ul-product-txt {
+      padding: 1.2rem;
+    }
+
+    .ul-product-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .ul-product-category {
+      color: #888;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* ANIMATIONS */
+    @keyframes popIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      80% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes floatMain {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(-50%, -60%) rotate(1deg);
+      }
+    }
+
+    @keyframes floatSmall1 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-10deg);
+      }
+
+      50% {
+        transform: translateY(-15px) rotate(-8deg);
+      }
+    }
+
+    @keyframes floatSmall2 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(10deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(12deg);
+      }
+    }
+
+    @keyframes blobFloat {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      33% {
+        transform: translate(20px, -30px) scale(1.1);
+      }
+
+      66% {
+        transform: translate(-20px, 20px) scale(0.9);
+      }
+    }
+
+    @keyframes spinSlow {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* DIVIDERS */
+    .wave-divider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .wave-divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 60px;
+    }
+
+    .wave-divider .shape-fill {
+      fill: #FFFFFF;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--kids-secondary);
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--kids-primary);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader" id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- SIDEBAR SECTION START -->
+  <div class="ul-sidebar">
+    <!-- header -->
+    <div class="ul-sidebar-header">
+      <div class="ul-sidebar-header-logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="logo" class="logo">
+        </a>
+      </div>
+      <!-- sidebar closer -->
+      <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+    </div>
+
+    <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+    <div class="ul-sidebar-about d-none d-lg-block">
+      <span class="title">Sobre LM Modas</span>
+      <p class="mb-0">Na LM Modas e Acessórios, você encontra as últimas tendências da moda casual para toda a família.
+        Oferecemos uma seleção especial de roupas masculinas, femininas e infantis, com peças versáteis e cheias de
+        estilo para o dia a dia. Nosso compromisso é com a qualidade e o conforto, garantindo que você e sua família
+        estejam sempre bem-vestidos em qualquer ocasião.</p>
+    </div>
+    <!-- parou aqui -->
+
+
+
+
+    <div class="ul-sidebar-about d-none d-lg-block">
+      <p class="mb-0">
+        A <strong>LM Modas & Acessórios</strong> é uma loja localizada em <strong>Itaim Paulista – SP</strong>, com foco
+        em roupas casuais femininas, masculinas e infantis.
+        Trabalhamos com peças versáteis, confortáveis e ideais para o dia a dia.
+        Nosso objetivo é oferecer moda acessível, com qualidade e estilo para toda a família.
+        Visite-nos e descubra novas combinações a cada estação — sempre com aquele toque moderno e atemporal que combina
+        com você.
+      </p>
+    </div>
+
+    <!-- sidebar footer -->
+    <div class="ul-sidebar-footer">
+      <span class="ul-sidebar-footer-title">Siga a LM Modas</span>
+
+      <div class="ul-sidebar-footer-social">
+        <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener" aria-label="Instagram @lmmodas270">
+          <i class="flaticon-instagram"></i>
+        </a>
+        <a href="https://wa.me/5541949989086" target="_blank" rel="noopener" aria-label="WhatsApp LM Modas">
+          <i class="flaticon-twitter"></i>
+        </a>
+        <a href="https://maps.google.com/?q=Rua%20Romoaldo%20de%20Souza%20Brito,%20270%20-%20Itaim%20Paulista,%20SP"
+          target="_blank" rel="noopener" aria-label="Localização da loja no Google Maps">
+          <i class="flaticon-facebook-app-symbol"></i>
+        </a>
+        <a href="mailto:contato@lmmodas.com.br" aria-label="Enviar e-mail para LM Modas">
+          <i class="flaticon-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- SIDEBAR SECTION END -->
+
+
+  <!-- HEADER SECTION START -->
+  <header class="ul-header">
+    <!-- header top -->
+    <div class="ul-header-top">
+      <div class="ul-header-top-slider splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+            <li class="splide__slide">
+              <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Novidades toda semana</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- header bottom -->
+    <div class="ul-header-bottom">
+      <div class="ul-container">
+        <div class="ul-header-bottom-wrapper">
+          <!-- header left -->
+          <div class="header-bottom-left">
+            <div class="logo-container">
+              <a href="index.html" class="d-inline-block"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
+            </div>
+
+
+          </div>
+
+          <!-- header nav -->
+          <div class="ul-header-nav-wrapper">
+            <div class="to-go-to-sidebar-in-mobile">
+              <nav class="ul-header-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="roupas-femininas.html">Feminino</a>
+                <a href="roupas-masculinas.html">Masculino</a>
+                <a href="roupas-infantis.html" class="active">Infantil</a>
+                <a href="joias.html">Jóias</a>
+                <a href="sobre-nos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- actions -->
+          <div class="ul-header-actions">
+            <button class="ul-header-mobile-search-opener d-xxl-none"><i
+                class="flaticon-search-interface-symbol"></i></button>
+          </div>
+
+          <!-- sidebar opener -->
+          <div class="d-inline-flex">
+            <button class="ul-header-sidebar-opener"><i class="flaticon-hamburger"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO NOVO -->
+    <div class="overflow-hidden">
+      <div class="ul-container">
+        <section class="ul-banner kids-hero">
+          <div class="kids-hero-bg"></div>
+          <div class="kids-hero-noise"></div>
+
+          <!-- Decorative Blobs -->
+          <div class="kids-blob kids-blob-1"></div>
+          <div class="kids-blob kids-blob-2"></div>
+
+          <div class="kids-hero-inner">
+            <!-- LADO ESQUERDO – TEXTO -->
+            <div class="kids-hero-card wow fadeInUp" data-wow-delay="0.1s">
+              <span class="kids-hero-pill">
+                <i class="flaticon-sparkle"></i>
+                Moda infantil em Itaim Paulista
+              </span>
+
+              <h1 class="kids-hero-title">
+                Roupas Infantis para<br><span>dia a dia, escola e festa</span>
+              </h1>
+
+              <p class="kids-hero-sub">
+                Na <strong>LM Modas Kids</strong> você monta o look das crianças com peças confortáveis,
+                modernas e com aquele preço de loja de bairro que cabe no bolso.
+              </p>
+
+              <div class="kids-hero-tags">
+                <span class="kids-hero-tag">Meninos do P ao 16</span>
+                <span class="kids-hero-tag">Meninas do P ao 16</span>
+                <span class="kids-hero-tag">Bebês e Primeiros Passos</span>
+              </div>
+
+              <div class="kids-hero-cta-row">
+                <a href="https://wa.me/5541949989086?text=Quero+ver+as+roupas+infantis"
+                  class="ul-btn kids-hero-cta-main">
+                  <i class="flaticon-whatsapp"></i>
+                  MONTAR LOOK NO WHATS
+                </a>
+
+                <a href="contato.html" class="kids-hero-cta-secondary">
+                  <i class="flaticon-location-pin"></i>
+                  Como chegar na loja
+                </a>
+              </div>
+            </div>
+
+            <!-- LADO DIREITO – COLAGEM DE FOTOS -->
+            <div class="kids-hero-media wow fadeInUp" data-wow-delay="0.25s">
+              <i class="flaticon-star kids-deco-star" style="top: 10%; right: 10%;"></i>
+              <i class="flaticon-star kids-deco-star"
+                style="bottom: 20%; left: 5%; font-size: 1.5rem; animation-delay: 2s;"></i>
+
+              <div class="kids-hero-photo-main">
+                <img src="fotos/infantil/conjunto-infantil-cores-mistas.jpg"
+                  alt="Conjuntos infantis coloridos na LM Modas Kids">
+              </div>
+
+              <div class="kids-hero-photo-small">
+                <img src="fotos/infantil/vestido-infantil-rosa.jpg" alt="Vestido infantil rosa na LM Modas Kids">
+              </div>
+
+              <div class="kids-hero-photo-small">
+                <img src="fotos/infantil/conjunto-menino-vermelho.jpg" alt="Conjunto infantil vermelho para menino">
+              </div>
+            </div>
+          </div>
+
+          <!-- Wave Divider -->
+          <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- FAIXA DE BENEFÍCIOS -->
+    <section class="kids-benefits-strip">
+      <div class="ul-container">
+        <div class="py-3 py-md-4">
+          <div class="row text-center g-3 g-md-0">
+            <div class="col-md-4">
+              <p class="mb-0">
+                <strong>Experimente na loja</strong><br>
+                Traga a criança e ajuste o tamanho na hora.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="mb-0">
+                <strong>Atendimento pelo Whats</strong><br>
+                Enviamos fotos e montamos combinações pra você.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="mb-0">
+                <strong>Pagamento fácil</strong><br>
+                PIX, cartão e possibilidade de parcelar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <div class="ul-container" style="position: relative; z-index: 2;">
+      <section class="ul-categories">
+        <div class="ul-inner-container">
+          <div class="ul-section-heading text-center justify-content-center">
+            <h2 class="ul-section-title" style="font-size: 2.5rem; color: var(--kids-primary);">Departamentos Infantis
+            </h2>
+            <p class="mt-2 mb-0" style="font-size: 1.1rem;">Looks completos para meninos, meninas e primeiros passos.
+            </p>
+          </div>
+
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2 row-cols-xxs-1 ul-bs-row g-4">
+            <div class="col">
+              <a class="ul-category" href="https://wa.me/5541949989086?text=Quero ver roupas de menino">
+                <div class="ul-category-img">
+                  <img src="fotos/infantil/conjunto-infantil-azul.jpg" alt="Roupas infantis para meninos"
+                    loading="lazy">
+                </div>
+                <div class="ul-category-txt">
+                  <span>Meninos</span>
+                </div>
+                <div class="ul-category-btn">
+                  VER COLEÇÃO <i class="flaticon-arrow-point-to-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="ul-category" href="https://wa.me/5541949989086?text=Quero ver roupas de menina">
+                <div class="ul-category-img">
+                  <img src="fotos/infantil/vestido-infantil-rosa.jpg" alt="Roupas infantis para meninas" loading="lazy">
+                </div>
+                <div class="ul-category-txt">
+                  <span>Meninas</span>
+                </div>
+                <div class="ul-category-btn">
+                  VER COLEÇÃO <i class="flaticon-arrow-point-to-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="ul-category" href="https://wa.me/5541949989086?text=Quero ver conjuntos infantis">
+                <div class="ul-category-img">
+                  <img src="fotos/infantil/conjunto-infantil-preto-e-vermelho.jpg" alt="Conjuntos infantis"
+                    loading="lazy">
+                </div>
+                <div class="ul-category-txt">
+                  <span>Conjuntos</span>
+                </div>
+                <div class="ul-category-btn">
+                  VER COLEÇÃO <i class="flaticon-arrow-point-to-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="ul-category" href="https://wa.me/5541949989086?text=Quero ver roupas de bebê">
+                <div class="ul-category-img">
+                  <img src="fotos/infantil/conjunto-infantil-bege.jpg" alt="Roupas para bebês e primeiros passos"
+                    loading="lazy">
+                </div>
+                <div class="ul-category-txt">
+                  <span>Primeiros Passos</span>
+                </div>
+                <div class="ul-category-btn">
+                  VER COLEÇÃO <i class="flaticon-arrow-point-to-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Wave Divider Inverted -->
+    <div class="wave-divider" style="position: relative; transform: rotate(0deg); margin-top: -2px; z-index: 1;">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill" fill="#FFF9FC"></path>
+      </svg>
+    </div>
+
+    <!-- PRODUTOS DESTAQUE -->
+    <div class="ul-container" style="background: #fff; padding-top: 3rem; padding-bottom: 3rem;">
+      <section class="ul-products">
+        <div class="ul-inner-container">
+          <div class="ul-section-heading">
+            <div class="left">
+              <span class="ul-section-sub-title" style="color: var(--kids-secondary);">LM Modas Kids</span>
+              <h2 class="ul-section-title" style="color: #2c3e50;">Destaques da Vitrine</h2>
+              <p class="mb-0">Algumas peças que representam o estilo da loja.</p>
+            </div>
+            <div class="right">
+              <a href="https://wa.me/5541949989086" class="ul-btn"
+                style="background: var(--kids-green); border-color: var(--kids-green);">Ver Catálogo no Whats <i
+                  class="flaticon-up-right-arrow"></i></a>
+            </div>
+          </div>
+
+          <div class="row ul-bs-row">
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="ul-products-sub-banner"
+                style="border-radius: 24px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
+                <div class="ul-products-sub-banner-img">
+                  <img src="fotos/infantil/vestido-infantil-vermelho-e-vede.jpg" alt="Destaque Moda Festa Infantil"
+                    loading="lazy">
+                </div>
+                <div class="ul-products-sub-banner-txt"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <h3 class="ul-products-sub-banner-title" style="font-family: 'Fredoka', sans-serif;">Moda Festa
+                    Infantil</h3>
+                  <p class="mb-3">Vestidos e conjuntos especiais para aniversários.</p>
+                  <a href="https://wa.me/5541949989086" class="ul-btn" style="background: #fff; color: #333;">Consultar
+                    <i class="flaticon-up-right-arrow"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-8 col-12">
+              <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <span class="ul-product-badge ul-product-badge--fav">
+                        <i class="flaticon-star"></i> Favorito
+                      </span>
+                      <img src="fotos/infantil/conjunto-infantil-rosa-e-preto.jpg" alt="Conjunto Rosa e Preto"
+                        loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Conjunto Fashion Pink</h4>
+                      <h5 class="ul-product-category">Menina • Estilo</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <span class="ul-product-badge ul-product-badge--new">
+                        <i class="flaticon-sparkle"></i> Novo
+                      </span>
+                      <img src="fotos/infantil/conjunto-infantil-preto-e-vermelho-menino.jpg"
+                        alt="Conjunto Menino Urbano" loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Conjunto Urbano Red</h4>
+                      <h5 class="ul-product-category">Menino • Passeio</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/vestido-infantil-turquesa.jpg" alt="Vestido Turquesa" loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Vestido Turquesa Luxo</h4>
+                      <h5 class="ul-product-category">Festa • Delicado</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/conjunto-menina-salmao.jpg" alt="Conjunto Salmão Verão" loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Conjunto Salmão Verão</h4>
+                      <h5 class="ul-product-category">Menina • Leveza</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/conjunto-infantil-azul.jpg" alt="Conjunto Shorts Saia Azul"
+                        loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Shorts-Saia &amp; Camisa</h4>
+                      <h5 class="ul-product-category">Menina • Verão</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/vestido-infantil-longo-vermelho.jpg" alt="Vestido Longo Vermelho"
+                        loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Vestido Longo Premium</h4>
+                      <h5 class="ul-product-category">Menina • Elegância</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/conjunto-infantil-vermelho-e-branco.jpg" alt="Conjunto Básico Vermelho"
+                        loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Conjunto Básico Confort</h4>
+                      <h5 class="ul-product-category">Menino • Dia a Dia</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/vestido-infantil-roxo.jpg" alt="Vestido Roxo" loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Vestido Roxo Verão</h4>
+                      <h5 class="ul-product-category">Menina • Casual</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="ul-product">
+                    <div class="ul-product-img">
+                      <img src="fotos/infantil/conjunto-infantil-bege.jpg" alt="Conjunto Bege Unissex" loading="lazy">
+                    </div>
+                    <div class="ul-product-txt">
+                      <h4 class="ul-product-title">Conjunto Minimalista</h4>
+                      <h5 class="ul-product-category">Unissex • Passeio</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" style="position: relative; transform: rotate(180deg); margin-bottom: -2px; z-index: 1;">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+
+    <!-- BLOCO "BRINCAR SEM PERDER O ESTILO" -->
+    <div class="ul-container">
+      <section class="ul-ad">
+        <div class="ul-inner-container">
+          <div class="ul-ad-content">
+            <div class="ul-ad-txt">
+              <span class="ul-ad-sub-title">LM Modas Kids</span>
+              <h2 class="ul-section-title">Brincar sem perder o estilo</h2>
+              <p>Peças confortáveis para acompanhar a rotina das crianças: escola, parque, família e fotos incríveis.
+              </p>
+              <div class="ul-ad-categories">
+                <span class="category"><span><i class="flaticon-check-mark"></i></span>Tecidos Confortáveis</span>
+                <span class="category"><span><i class="flaticon-check-mark"></i></span>Alta Durabilidade</span>
+                <span class="category"><span><i class="flaticon-check-mark"></i></span>Preço Justo no Itaim</span>
+                <span class="category"><span><i class="flaticon-check-mark"></i></span>Variedade de Tamanhos</span>
+              </div>
+            </div>
+
+            <div class="ul-ad-img">
+              <img src="fotos/infantil/conjunto-infantil-branco.jpg" alt="Criança Estilosa" loading="lazy">
+            </div>
+
+            <a href="https://wa.me/5541949989086" class="ul-btn">Visite a loja <i
+                class="flaticon-up-right-arrow"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SUB-BANNERS -->
+    <div class="ul-container">
+      <section class="ul-sub-banners">
+        <div class="ul-inner-container">
+          <div class="row ul-bs-row row-cols-md-3 row-cols-sm-2 row-cols-1">
+            <div class="col">
+              <div class="ul-sub-banner">
+                <div class="ul-sub-banner-txt">
+                  <div class="top">
+                    <span class="ul-ad-sub-title">Para Meninas</span>
+                    <h3 class="ul-sub-banner-title">Vestidos</h3>
+                    <p class="ul-sub-banner-descr">Leveza e elegância.</p>
+                  </div>
+                  <div class="bottom">
+                    <a href="https://wa.me/5541949989086?text=Quero ver vestidos" class="ul-sub-banner-btn">Ver modelos
+                      <i class="flaticon-up-right-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="ul-sub-banner-img">
+                  <img src="fotos/infantil/vestido-infantil-lilas.jpg" alt="Moda Menina" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="ul-sub-banner ul-sub-banner--2">
+                <div class="ul-sub-banner-txt">
+                  <div class="top">
+                    <span class="ul-ad-sub-title">Para Meninos</span>
+                    <h3 class="ul-sub-banner-title">Conjuntos</h3>
+                    <p class="ul-sub-banner-descr">Praticidade no dia a dia.</p>
+                  </div>
+                  <div class="bottom">
+                    <a href="https://wa.me/5541949989086?text=Quero ver conjuntos de meninos"
+                      class="ul-sub-banner-btn">Ver modelos <i class="flaticon-up-right-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="ul-sub-banner-img">
+                  <img src="fotos/infantil/conjunto-infantil-vermelho-e-preto.jpg" alt="Moda Menino" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="ul-sub-banner ul-sub-banner--3">
+                <div class="ul-sub-banner-txt">
+                  <div class="top">
+                    <span class="ul-ad-sub-title">Nosso Endereço</span>
+                    <h3 class="ul-sub-banner-title">Itaim Paulista</h3>
+                    <p class="ul-sub-banner-descr">Rua Romoaldo de Souza Brito, 270.</p>
+                  </div>
+                  <div class="bottom">
+                    <a href="contato.html" class="ul-sub-banner-btn">Como chegar <i
+                        class="flaticon-up-right-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="ul-sub-banner-img">
+                  <img src="assets/img/sub-banner-3.png" alt="Localização" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <section class="ul-reviews overflow-hidden">
+      <div class="ul-section-heading text-center justify-content-center">
+        <div>
+          <span class="ul-section-sub-title">Depoimentos</span>
+          <h2 class="ul-section-title">O que as mamães dizem</h2>
+          <p class="ul-reviews-heading-descr">Confiança de quem compra na LM Modas.</p>
+        </div>
+      </div>
+
+      <div class="ul-reviews-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="ul-review">
+              <div class="ul-review-rating"><i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                  class="flaticon-star"></i><i class="flaticon-star"></i><i class="flaticon-star-3"></i></div>
+              <p class="ul-review-descr">"As roupas são lindas e o tecido é muito bom. Meu filho brinca e não estraga
+                fácil. Preço ótimo pro Itaim."</p>
+              <div class="ul-review-bottom">
+                <div class="ul-review-reviewer">
+                  <h3 class="reviewer-name">Cláudia</h3>
+                  <span class="reviewer-role">Cliente Itaim</span>
+                </div>
+                <div class="ul-review-icon"><i class="flaticon-left"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="ul-review">
+              <div class="ul-review-rating"><i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                  class="flaticon-star"></i><i class="flaticon-star"></i><i class="flaticon-star-3"></i></div>
+              <p class="ul-review-descr">"Comprei um vestido para minha filha e ficou perfeito. Atendimento excelente na
+                loja física."</p>
+              <div class="ul-review-bottom">
+                <div class="ul-review-reviewer">
+                  <h3 class="reviewer-name">Fernanda</h3>
+                  <span class="reviewer-role">Mãe de Menina</span>
+                </div>
+                <div class="ul-review-icon"><i class="flaticon-left"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="ul-review">
+              <div class="ul-review-rating"><i class="flaticon-star"></i><i class="flaticon-star"></i><i
+                  class="flaticon-star"></i><i class="flaticon-star"></i><i class="flaticon-star-3"></i></div>
+              <p class="ul-review-descr">"Gosto muito dos conjuntos, são práticos para o dia a dia e lavam super bem."
+              </p>
+              <div class="ul-review-bottom">
+                <div class="ul-review-reviewer">
+                  <h3 class="reviewer-name">Patrícia</h3>
+                  <span class="reviewer-role">Cliente</span>
+                </div>
+                <div class="ul-review-icon"><i class="flaticon-left"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave Divider Before Footer -->
+    <div class="wave-divider"
+      style="position: relative; transform: rotate(0deg); margin-top: -2px; z-index: 1; background: #fff;">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill" fill="#f8f9fa"></path>
+      </svg>
+    </div>
+
+    <!-- LOCAL SEO CONTENT SECTION -->
+    <section class="ul-container" style="padding-bottom: 4rem;">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div
+            style="background: #fff; padding: 3rem; border-left: 5px solid var(--kids-primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 20px;">
+            <h2 style="font-family: 'Fredoka', sans-serif; color: var(--kids-primary); margin-bottom: 1.5rem;">
+              Moda Infantil no Itaim Paulista: Diversão e Conforto
+            </h2>
+            <p style="line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+              Procurando por <strong>roupas infantis no Itaim Paulista</strong>? A LM Modas Kids é o lugar certo!
+              Localizada na <strong>Rua Romoaldo de Souza Brito, 270</strong>, nossa loja é um paraíso para os pequenos
+              e para os papais que buscam qualidade e preço justo.
+            </p>
+            <p style="line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+              Sabemos que criança precisa de conforto para brincar e crescer. Por isso, nossa curadoria inclui peças
+              feitas com tecidos macios e duráveis. Temos desde <strong>conjuntos para o dia a dia, vestidos para
+                festas, até roupas temáticas</strong> que as crianças adoram.
+            </p>
+            <p style="line-height: 1.8; color: #555;">
+              Venha conhecer nosso espaço no Itaim Paulista. Aqui, cada cliente é tratado com carinho e atenção. A LM
+              Modas Kids é a sua parceira na hora de vestir seus filhos com estilo e alegria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="ul-container" style="padding-bottom: 6rem;">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="ul-section-title" style="color: var(--kids-primary);">Dúvidas dos Papais</h2>
+          <p>Perguntas frequentes sobre nossa loja infantil no Itaim Paulista.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item"
+              style="border: none; margin-bottom: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.03); border-radius: 15px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne"
+                  style="font-family: 'Fredoka', sans-serif; font-weight: 500; color: var(--kids-text);">
+                  Onde comprar roupa infantil barata e de qualidade no Itaim Paulista?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color: #666;">
+                  Na LM Modas Kids! Estamos na Rua Romoaldo de Souza Brito, 270. Oferecemos o melhor custo-benefício da
+                  região, com peças lindas e duráveis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item"
+              style="border: none; margin-bottom: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.03); border-radius: 15px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                  style="font-family: 'Fredoka', sans-serif; font-weight: 500; color: var(--kids-text);">
+                  Quais tamanhos vocês trabalham?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color: #666;">
+                  Trabalhamos com moda infantil do tamanho 1 ao 16, atendendo desde os primeiros passos até a
+                  pré-adolescência.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item"
+              style="border: none; margin-bottom: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.03); border-radius: 15px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                  style="font-family: 'Fredoka', sans-serif; font-weight: 500; color: var(--kids-text);">
+                  Vocês têm roupas para festas infantis?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color: #666;">
+                  Sim! Temos vestidos maravilhosos para meninas e conjuntos sociais super estilosos para meninos,
+                  perfeitos para aniversários e eventos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ul-footer">
+    <div class="ul-inner-container">
+      <div class="ul-footer-top">
+        <!-- single links column -->
+        <div class="ul-footer-top-widget">
+          <h3 class="ul-footer-top-widget-title">Categorias</h3>
+
+          <div class="ul-footer-top-widget-links">
+            <a href="roupas-femininas.html">Feminino</a>
+            <a href="roupas-masculinas.html">Masculino</a>
+            <a href="roupas-infantis.html">Infantil</a>
+            <a href="joias.html">Jóias</a>
+          </div>
+        </div>
+
+        <!-- single links column -->
+        <div class="ul-footer-top-widget">
+          <h3 class="ul-footer-top-widget-title">Atendimento</h3>
+
+          <div class="ul-footer-top-widget-links">
+            <a href="https://wa.me/5541949989086" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener">Instagram @lmmodas270</a>
+            <a href="contato.html">Fale conosco</a>
+          </div>
+        </div>
+
+        <!-- single links column -->
+        <div class="ul-footer-top-widget">
+          <h3 class="ul-footer-top-widget-title">Institucional</h3>
+
+          <div class="ul-footer-top-widget-links">
+            <a href="sobre-nos.html">Sobre a LM</a>
+            <a href="faq.html">Dúvidas Frequentes</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ul-footer-middle">
+        <!-- single widget -->
+        <div class="ul-footer-middle-widget">
+          <h3 class="ul-footer-middle-widget-title">Contato Rápido</h3>
+          <div class="ul-footer-middle-widget-content">
+            <div class="app-links">
+              <!-- mantendo as mesmas imagens -->
+              <a href="https://wa.me/5541949989086" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+                <img src="assets/img/android.png" alt="Atendimento via WhatsApp">
+              </a>
+              <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener"
+                aria-label="Visitar Instagram @lmmodas270">
+                <img src="assets/img/ios.png" alt="Nos acompanhe no Instagram">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- single widget -->
+        <div class="ul-footer-middle-widget">
+          <h3 class="ul-footer-middle-widget-title">Siga a LM Modas</h3>
+          <div class="ul-footer-middle-widget-content">
+            <div class="social-links">
+              <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener" aria-label="Instagram"><i
+                  class="flaticon-facebook-app-symbol"></i></a>
+              <a href="https://wa.me/5541949989086" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                  class="flaticon-twitter"></i></a>
+              <a href="mailto:contato@lmmodas.com.br" aria-label="E-mail"><i class="flaticon-linkedin-big-logo"></i></a>
+              <a href="https://maps.google.com/?q=Rua%20Romoaldo%20de%20Souza%20Brito,%20270%20-%20Itaim%20Paulista,%20SP"
+                target="_blank" rel="noopener" aria-label="Como chegar"><i class="flaticon-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- single widget -->
+        <div class="ul-footer-middle-widget">
+          <h3 class="ul-footer-middle-widget-title">Precisa de ajuda? Fale agora!</h3>
+          <div class="ul-footer-middle-widget-content">
+            <div class="contact-nums">
+              <a href="tel:+5541949989086">(41) 94998-9086</a>, <a href="https://wa.me/5541949989086" target="_blank"
+                rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- single widget -->
+        <div class="ul-footer-middle-widget align-self-center">
+          <a href="index.html"><img src="assets/img/logo-foot.png" alt="logo" class="logo"></a>
+        </div>
+      </div>
+
+      <div class="ul-footer-bottom">
+        <p class="copyright-txt">Copyright 2025 © <a href="#" class="ul-footer-bottom-link">LM Modas &amp;
+            Acessórios</a> • Rua Romoaldo de Souza Brito, 270 — Itaim Paulista, São Paulo • @lmmodas270</p>
+        <img src="assets/img/payment-methods.png" alt="payment methods logos">
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5541949989086?text=Ol%C3%A1%2C+vim+do+site+de+roupas+infantis+e+quero+ver+os+modelos"
+    class="floating-whats" aria-label="Conversar no WhatsApp com a LM Modas Kids">
+    <div class="floating-whats-btn">
+      <div class="floating-whats-pulse"></div>
+      <i class="flaticon-twitter"></i>
+      <span class="floating-whats-label">Montar look agora</span>
+    </div>
+  </a>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/splide/splide.min.js"></script>
+  <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/slim-select/slimselect.js"></script>
+  <script src="assets/vendor/animate-wow/wow.min.js"></script>
+  <script src="assets/vendor/splittype/index.min.js"></script>
+  <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+  <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- LOCAL BUSINESS SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "LM Modas Kids - Moda Infantil",
+    "image": "https://lmmodas.com.br/fotos/infantil/conjunto-infantil-cores-mistas.jpg",
+    "@id": "https://lmmodas.com.br/roupas-infantis.html",
+    "url": "https://lmmodas.com.br/roupas-infantis.html",
+    "telephone": "+5541949989086",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Romoaldo de Souza Brito, 270",
+      "addressLocality": "Itaim Paulista",
+      "addressRegion": "SP",
+      "postalCode": "08110-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.500000, 
+      "longitude": -46.400000
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://instagram.com/lmmodas270"
+    ]
+  }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | LM Modas & Acessórios - Fale Conosco</title>
+    <meta name="description"
+        content="Entre em contato com a LM Modas. Estamos prontos para atender você pelo WhatsApp, telefone ou em nossa loja física em Itaim Paulista.">
+    <meta name="keywords"
+        content="contato lm modas, telefone lm modas, whatsapp lm modas, endereço lm modas, loja itaim paulista">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fale Conosco | LM Modas & Acessórios">
+    <meta property="og:description" content="Dúvidas? Sugestões? Quer saber sobre um produto? Fale com a gente!">
+    <meta property="og:url" content="https://lmmodas.com.br/contato.html">
+    <meta property="og:image" content="assets/img/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_glamer.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Custom Styles for Contato Page */
+        :root {
+            --contact-primary: #bfa37c;
+            --contact-secondary: #2b2b2b;
+            --contact-bg-light: #f8f9fa;
+        }
+
+        .contact-hero {
+            background: linear-gradient(135deg, #2b2b2b 0%, #4a4a4a 100%);
+            padding: 100px 0 80px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(191, 163, 124, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .contact-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border-bottom: 3px solid transparent;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-bottom-color: var(--contact-primary);
+        }
+
+        .contact-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: var(--contact-bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--contact-primary);
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon-wrapper {
+            background: var(--contact-primary);
+            color: #fff;
+        }
+
+        .form-control {
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            background-color: #f9f9f9;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: var(--contact-primary);
+            background-color: #fff;
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .visit-section {
+            background-color: var(--contact-bg-light);
+            padding: 80px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+        <div class="ul-sidebar-about d-none d-lg-block">
+            <span class="title">Sobre LM Modas</span>
+            <p class="mb-0">Na LM Modas e Acessórios, você encontra as últimas tendências da moda casual para toda a
+                família. Oferecemos uma seleção especial de roupas masculinas, femininas e infantis.</p>
+        </div>
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Siga a LM Modas</span>
+            <div class="ul-sidebar-footer-social">
+                <a href="https://instagram.com/lmmodas270" target="_blank" rel="noopener"><i
+                        class="flaticon-instagram"></i></a>
+                <a href="https://wa.me/5541949989086" target="_blank" rel="noopener"><i
+                        class="flaticon-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header">
+        <div class="ul-header-top">
+            <div class="ul-header-top-slider splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Fale Conosco Agora</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Atendimento
+                                Personalizado</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="ul-header-top-slider-item"><i class="flaticon-sparkle"></i> Visite Nossa Loja</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ul-header-bottom">
+            <div class="ul-container">
+                <div class="ul-header-bottom-wrapper">
+                    <div class="header-bottom-left">
+                        <div class="logo-container">
+                            <a href="index.html" class="d-inline-block"><img src="assets/img/logo.png" alt="logo"
+                                    class="logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="ul-header-nav-wrapper">
+                        <div class="to-go-to-sidebar-in-mobile">
+                            <nav class="ul-header-nav" aria-label="Navegação principal">
+                                <a href="index.html">Início</a>
+                                <a href="roupas-femininas.html">Feminino</a>
+                                <a href="roupas-masculinas.html">Masculino</a>
+                                <a href="roupas-infantis.html">Infantil</a>
+                                <a href="joias.html">Jóias</a>
+                                <a href="sobre-nos.html">Sobre Nós</a>
+                                <a href="contato.html" class="active">Contato</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="ul-header-actions">
+                        <button class="ul-header-mobile-search-opener d-xxl-none"><i
+                                class="flaticon-search-interface-symbol"></i></button>
+                    </div>
+
+                    <div class="d-inline-flex">
+                        <button class="ul-header-sidebar-opener"><i class="flaticon-hamburger"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+        <!-- HERO SECTION START -->
+        <section class="contact-hero">
+            <div class="container position-relative z-1">
+                <h1 class="display-4 fw-bold mb-3 wow fadeInUp">Vamos Conversar?</h1>
+                <p class="lead mb-4 wow fadeInUp" data-wow-delay="0.1s">Estamos aqui para ajudar você a encontrar o seu
+                    estilo.</p>
+                <a href="https://wa.me/5541949989086" class="btn btn-light rounded-pill px-5 py-3 fw-bold wow fadeInUp"
+                    data-wow-delay="0.2s">
+                    <i class="flaticon-whatsapp me-2"></i> Chamar no WhatsApp
+                </a>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- INFO CARDS SECTION START -->
+        <section class="py-5" style="margin-top: -50px;">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper">
+                                <i class="flaticon-location"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Nossa Loja</h3>
+                            <p class="text-muted mb-0">Rua Tibúrcio de Sousa, 270<br>Itaim Paulista, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper">
+                                <i class="flaticon-call"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Fale Conosco</h3>
+                            <p class="text-muted mb-0">WhatsApp: (41) 9499-89086<br>Email: contato@lmmodas.com.br</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper">
+                                <i class="flaticon-clock"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Horário</h3>
+                            <p class="text-muted mb-0">Segunda a Sábado: 09h às 19h<br>Domingo: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- INFO CARDS SECTION END -->
+
+        <!-- FORM & MAP SECTION START -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5 align-items-stretch">
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <h2 class="fw-bold mb-4">Envie uma Mensagem</h2>
+                        <p class="text-muted mb-4">Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e
+                            responderemos o mais breve possível.</p>
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                                        <label for="name">Seu Nome</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                                        <label for="email">Seu Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Assunto">
+                                        <label for="subject">Assunto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Sua Mensagem" id="message"
+                                            style="height: 150px"></textarea>
+                                        <label for="message">Sua Mensagem</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3 rounded-pill fw-bold" type="submit">Enviar
+                                        Mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.025464890077!2d-46.3996424237451!3d-23.495592259180924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63dd7f155555%3A0x6690542265279939!2sR.%20Tib%C3%BArcio%20de%20Sousa%2C%20270%20-%20Itaim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008140-000!5e0!3m2!1spt-BR!2sbr!4v1709667000000!5m2!1spt-BR!2sbr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORM & MAP SECTION END -->
+
+        <!-- VISIT US SECTION START -->
+        <section class="visit-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0 wow fadeInRight">
+                        <div class="position-relative">
+                            <img src="fotos/feminino/roupa-feminina-6.jpg" class="img-fluid rounded-3 shadow-lg"
+                                alt="Fachada LM Modas">
+                            <div class="position-absolute bottom-0 start-0 bg-white p-4 rounded-top-end shadow-lg d-none d-md-block"
+                                style="max-width: 250px;">
+                                <p class="mb-0 fw-bold text-uppercase letter-spacing-1 small text-muted">Localização
+                                    Privilegiada</p>
+                                <p class="mb-0 fw-bold">No coração de Itaim Paulista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 pe-lg-5 wow fadeInLeft">
+                        <span class="text-uppercase text-muted letter-spacing-2 d-block mb-2">Por que nos
+                            visitar?</span>
+                        <h2 class="display-5 fw-bold mb-4">Uma Experiência de Compra Única</h2>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg-white rounded-circle p-3 shadow-sm text-primary">
+                                    <i class="flaticon-shirt fs-4" style="color: var(--contact-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Provadores Confortáveis</h4>
+                                <p class="text-muted">Espaço amplo e iluminado para você experimentar suas peças com
+                                    tranquilidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg-white rounded-circle p-3 shadow-sm text-primary">
+                                    <i class="flaticon-coffee-cup fs-4" style="color: var(--contact-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Cantinho do Café</h4>
+                                <p class="text-muted">Enquanto você escolhe, servimos um café delicioso para tornar seu
+                                    momento mais agradável.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg-white rounded-circle p-3 shadow-sm text-primary">
+                                    <i class="flaticon-credit-card fs-4" style="color: var(--contact-primary);"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h5 fw-bold">Facilidade no Pagamento</h4>
+                                <p class="text-muted">Aceitamos todos os cartões e parcelamos suas compras para caber no
+                                    seu bolso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VISIT US SECTION END -->
+
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer">
+        <div class="ul-inner-container">
+            <div class="ul-footer-top">
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">LM Modas</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="shop.html">Masculino</a>
+                        <a href="shop.html">Feminino</a>
+                        <a href="shop.html">Infantil</a>
+                    </div>
+                </div>
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">Atendimento</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="https://wa.me/5541949989086">WhatsApp</a>
+                        <a href="contact.html">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="ul-footer-top-widget">
+                    <h3 class="ul-footer-top-widget-title">Institucional</h3>
+                    <div class="ul-footer-top-widget-links">
+                        <a href="about.html">Sobre Nós</a>
+                        <a href="privacy.html">Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ul-footer-bottom">
+                <p class="copyright-txt">Copyright 2025 © LM Modas & Acessórios</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
